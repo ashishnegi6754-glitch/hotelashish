@@ -1,0 +1,14 @@
+{
+  "name": "hotel-ashish",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  }
+  // Optional: store reservations/messages. Create with:
+  //   npx wrangler kv namespace create HOTEL_DATA
+  // then paste the returned id below and uncomment.
+  // "kv_namespaces": [{ "binding": "HOTEL_DATA", "id": "PASTE_ID_HERE" }]
+}
